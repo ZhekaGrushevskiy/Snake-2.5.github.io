@@ -730,11 +730,7 @@ var mousecount=10;
             mouse.posY=Math.floor((Math.random() * ((fieldHeight - fieldOne * 3) / fieldOne) + 3)) * fieldOne;
             snake.unshift(newHead);
         }
-        if((mouse.posX==food.posX && mouse.posY==food.posY) ||
-        (mouse.posX==redheart.posX && mouse.posY==redheart.posY)){
-            mouse.posX=Math.floor((Math.random() * ((fieldWidth - fieldOne) / fieldOne))) * fieldOne;
-            mouse.posY=Math.floor((Math.random() * ((fieldHeight - fieldOne * 3) / fieldOne) + 3)) * fieldOne;
-        }
+       
         if (snakeX == redheart.posX && snakeY == redheart.posY) {
             slowHeart.play();
             locCount = 0;
